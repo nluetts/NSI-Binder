@@ -1,0 +1,5 @@
+# install jupyter extension to render PlotlyJS figures
+jupyter labextension install jupyterlab-plotly
+
+# instantiate julia project
+julia -e 'import Pkg; Pkg.activate("/home/jovyan/"); Pkg.instantiate()'
