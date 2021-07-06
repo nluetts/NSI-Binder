@@ -9,5 +9,4 @@ and examples on how to use the package.
 
 Click the badge to start Jupyter on your binder session:
 
-https://mybinder.org/v2/gh/nluetts/NSI-Binder/HEAD?filepath=example-1.ipynb
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/nluetts/NSI-Binder/HEAD?filepath=example-1.ipynb&urlpath=lab)
