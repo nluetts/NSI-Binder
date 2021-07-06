@@ -1,5 +1,14 @@
 # install jupyter extension to render PlotlyJS figures
 jupyter labextension install jupyterlab-plotly
 
+# install julia
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.6/julia-1.6.1-linux-x86_64.tar.gz
+tar -xf julia-1.6.1-linux-x86_64.tar.gz
+rm julia-1.6.1-linux-x86_64.tar.gz
+export PATH=$HOME/julia-1.6.1/bin:$PATH
+echo "export PATH=$HOME/julia-1.6.1/bin:$PATH" >> .bash_profile
+
+julia -e 'import Pkg; Pkg.add("IJulia")'
+
 # instantiate julia project
 julia -e 'import Pkg; Pkg.activate("/home/jovyan/"); Pkg.instantiate()'
